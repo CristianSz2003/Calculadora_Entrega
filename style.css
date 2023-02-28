@@ -1,0 +1,82 @@
+html,
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body{
+    background-color:rgb(104, 123, 160);
+    
+    
+}
+
+operacion{
+    border:none;
+    outline: none;
+}
+
+operacion:focus{
+    outline: none;
+}
+
+num{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+num:focus{
+    outline: none;
+    
+}
+
+.calcu{
+    background-color: rgb(7, 37, 71);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .75rem;
+    width: 325px;
+    border: 1px solid;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pantalla{
+    grid-column: 1/5;
+    border-radius: .75rem;
+    font-size: 2rem;
+    height: 6rem;
+    color:rgb(19, 218, 46);
+    background:rgb(1, 28, 29);
+    text-align: end;
+    padding: .5rem;
+    border-radius: 50px;
+}
+
+
+
+.operacion, .num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 1.5;
+    font-size: 1.25rem;
+    color: rgb(7, 61, 109);
+    transition: .15s ease;
+    border-radius: 100px;
+
+}
+
+.operacion{
+    background-color: blueviolet;
+    color: black;
+}
+
+
+
+
